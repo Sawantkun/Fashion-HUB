@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+}
+
+nav .hamburger {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+nav .hamburger:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+nav .hamburger .line {
+  width: 90%;
+  height: 2px;
+  background-color: black;
+}
+
+nav .hamburger .line::after, nav .hamburger .line::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: black;
+}
+
+nav .hamburger .line::after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+nav .hamburger .line::before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+nav img {
+  cursor: pointer;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Media/Images/hero-bcg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#home .home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 170px;
+  width: 675px;
+  padding: 20px 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+#home .home-content h1 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 3.3rem;
+}
+
+#home .home-content button {
+  cursor: pointer;
+  border: none;
+  background-color: #ff853e;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#home .home-content button:hover {
+  background-color: #fa7a2f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
